@@ -1,0 +1,62 @@
+body,
+html {
+    color: black;
+    background-color: white;
+    font-family: serif;
+    margin: 0;
+    font-size: 14pt;
+}
+
+#indexmenu,
+#explore,
+img.src,
+a,
+.photo,
+.column2,
+#menu,
+.row,
+button,
+video {
+    display: none;
+}
+
+ol {
+    display: inline-block;
+}
+
+.row1 p {
+    border-radius: 8px;
+    border: solid black 5px;
+    margin: 10px;
+    padding: 20px;
+    font-size: small;
+}
+
+#Bani {
+    text-align: right;
+    margin-right: 130px;
+}
+
+#narr {
+    text-align: center;
+    margin-left: -50px;
+}
+
+.hero-text {
+    margin-bottom: 100px;
+}
+
+#index {
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin-left: 50px;
+    margin-top: -200px;
+}
+
+#phraseHTML {
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin-left: 50px;
+}

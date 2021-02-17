@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Behind my lens M.L</title>
+    <link rel="icon" href="images/circle-cropped.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleMobile.css" media="only screen and (max-width:1024px)">
+    <link rel="stylesheet" href="stylePrint.css" media="print">
+
+    <script>
+        const phraseJS = new Array(2);
+        phraseJS[0] = 'A 20 year old eager to create and capture the moments with her camera';
+        phraseJS[1] = 'Capturing life as it happens';
+        const casualIndex = Math.floor(Math.random() * phraseJS.length);
+    </script>
+</head>
+
+
+<body onload="document.getElementById('phraseHTML').innerHTML=phraseJS[casualIndex]">
+    <div class="hero-image">
+        <div class="nav-container " id="indexmenu">
+            <header>
+                <nav id="home">
+                    <a href="#home">Home</a>
+                    <a href="#portofolio">Portofolio</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://www.instagram.com/maldalika/" onclick="myfunction()">Instagram</a>
+                </nav>
+            </header>
+        </div>
+        <script>
+            function myfunction() {
+                alert("You will be ridirected to my instgram profile. Follow me if you find my work interesting");
+            }
+        </script>
+        <div class="hero-text">
+            <h1 id="index">Behind the lens of <br> Malda Lika</h1>
+
+            <p id="phraseHTML"> A 20 year old eager to create and capture the moments with her camera</p>
+            <button id="explore" onclick="document.location='modelphotography.html'">Explore</button>
+
+        </div>
+
+    </div>
+    <div id="portofolio" class="portofolio">
+        <h2>Portofolio</h2>
+        <div class="box">
+
+            <div class="model 2">
+                <h3>Tour and Places </h3>
+                <a href="tourAndPlaces.html">
+                    <img src="images/prov2.jpg" alt="places" class="foto"></a>
+            </div>
+            <div class="model 1">
+                <h3>Model photography</h3>
+                <a href="modelphotography.html">
+                    <img src="images/prova1.jpg" alt="model photo " class="fotomodel" onmouseover="this.src='images/klintcigfront.jpg'" onmouseout="this.src='images/prova1.jpg'"></a>
+
+            </div>
+            <div class="model 3">
+                <h3>Video Projects</h3>
+                <a href="VideoProject.html">
+                    <img src="images/videocover.PNG" alt="video cover" class="foto" height="253"></a>
+            </div>
+
+        </div>
+        <div id="contact" class="container">
+            <div class="photo">
+                <img class="image" src="images/me.jpg" alt="malda lika" width="200">
+            </div>
+            <div class="text">
+                <h4>Contact me</h4>
+                <p> To professionally capture the beautiful moments of life</p>
+                <div class="column2">
+                    <form action="javascript:void(0)" onSubmit="window.alert('thanks for reaching out, feedback will be given as soon as possibile!')">
+
+                        <div class="row2">
+                            <label for="fname"> First name</label>
+                            <input type="text" id="fname" name="fname" placeholder="Alexa" required>
+                        </div>
+                        <div class="row2">
+                            <label for="lname"> Last name</label>
+                            <input type="text" id="lname" name="lname" placeholder="Smith" required>
+                        </div>
+                        <div class="row2">
+                            <label for="country"> Country</label>
+                            <select id="country" onchange="myFunctionIcon('icon',this.value)">
+                                <option value="alb">Albania</option>
+                                <option value="it">Italy</option>
+                                <option value="sp">Spain</option>
+                                <option value="usa">USA</option>
+                                </select>
+                            <img src="images/alb.jpg" alt="flag" id="icon">
+                        </div>
+                        <label for="message">Send a message...</label>
+                        <textarea id="message" name="message">Write something</textarea>
+                        <button id="submit">Submit</button>
+                    </form>
+
+                </div>
+
+                <script>
+                    function myFunctionIcon(photoid, name) {
+                        document.getElementById(photoid).src = "images/" + name + ".jpg";
+                    }
+                </script>
+            </div>
+
+        </div>
+        <footer id="indexfooter">
+
+            <p> &#169; Malda Lika. All rights reserved.</p>
+            <p>Last Modified:</p>
+            <script>
+               document.write(document.lastModified)
+            </script>
+        </footer>
+    </div>
+</body>
+
+</html>

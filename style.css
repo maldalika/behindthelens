@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+body,
+html {
+    height: 100%;
+    margin: 0%;
+    font-family: 'Poppins', arial;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/background.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 5px;
+}
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: auto;
+    font-size: small;
+}
+
+.hero-image button {
+    border: 1px greenyellow solid;
+    border-radius: 2px;
+    background-color: transparent;
+    color: white;
+    transition-duration: 0.4s;
+    width: 80px;
+}
+
+.hero-image button a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-image button :hover {
+    background-color: transparent;
+    color: black;
+}
+
+
+/*index menu*/
+
+.hero-image container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+    float: left;
+    display: inline-block;
+}
+
+.nav-container {
+    background-color: transparent;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0px auto;
+}
+
+#indexmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+}
+
+#indexmenu a:hover {
+    color: yellowgreen;
+}
+
+.nav-container a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+}
+
+.nav-container a:hover {
+    color: yellowgreen;
+}
+
+h1 {
+    text-align: center;
+}
+
+#index {
+    text-align: left;
+}
+
+#explore {
+    margin-left: 0px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box div {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0.5em;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+}
+
+.foto {
+    width: 380px;
+}
+
+.fotomodel {
+    width: 300px;
+}
+
+
+/*per la contac form per index.html*/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    background-color: whitesmoke;
+}
+
+#contact {
+    height: 80vh;
+    width: 100%;
+    margin-top: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 200px;
+}
+
+select {
+    width: 200px;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+}
+
+.text {
+    text-align: center;
+    font-size: larger;
+}
+
+.photo {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 13px;
+}
+
+.row2 {
+    justify-content: space-around;
+    margin: 3px;
+}
+
+#submit {
+    background-color: yellowgreen;
+    color: white;
+    margin: 8px;
+}
+
+#submit:hover {
+    background-color: transparent;
+    color: black;
+}
+
+#icon {
+    background: url();
+    height: 30px;
+    width: 30px;
+    backface-visibility: visible;
+    display: inline-block;
+    margin-bottom: -10px;
+}
+
+#indexfooter {
+    margin-top: 0;
+}
+
+
+/*menu per le altre pagine*/
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+/* stile per la galleria "Tour and Places" e "Model Photography*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 4px;
+    align-self: center;
+    margin: 10px;
+    float: none;
+    justify-content: center;
+}
+
+
+/*creare 3 columns uguale posizionate una vicino all altra*/
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.img:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+ol {
+    display: none;
+}
+
+
+/*Stile per "Video Projects"*/
+
+#Bani {
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: -10px;
+    font-size: large;
+}
+
+#narr {
+    text-align: right;
+    margin-right: 310px;
+    margin-bottom: -10px;
+    margin-top: 100px;
+    font-size: large;
+}
+
+.column1 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.column1 div {
+    display: inline-block;
+    text-align: left;
+    padding: 10px;
+    margin: 0.5em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.row1 {
+    width: 500px;
+    flex-direction: row;
+}
+
+.row1 p {
+    border-radius: 8px;
+    border: solid yellowgreen 5px;
+    background-color: rgb(184, 245, 61);
+    margin: 10px;
+    padding: 20px;
+    font-size: small;
+}
+
+#myVideo {
+    width: 500px;
+    height: 300px;
+}
+
+#myVideo1 {
+    width: 600px;
+    height: 300px;
+}
+
+button {
+    border: 1px gray solid;
+    border-radius: 2px;
+    background-color: greenyellow;
+    color: white;
+    transition-duration: 0.4s;
+    width: 80px;
+    margin-left: 30px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(146, 224, 28);
+    cursor: pointer;
+}
+
+#playBtn {
+    margin-left: 130px;
+}
+
+#playBtn1 {
+    margin-left: 840px;
+}
+
+footer {
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}

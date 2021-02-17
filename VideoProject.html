@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleMobile.css" media="only screen and (max-width:1024px)">
+    <link rel="stylesheet" href="stylePrint.css" media="print">
+    <link rel="icon" href="images/circle-cropped.png" type="image/png">
+</head>
+
+<body>
+    <div class="nav-container" id="menu">
+        <header>
+            <nav id="model-photography">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#portofolio">Portofolio</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="https://www.instagram.com/maldalika/" onclick="myfunction()">Instagram</a>
+            </nav>
+        </header>
+    </div>
+    <script>
+        function myfunction() {
+            alert("You will be ridirected to my instgram profile. Follow me if you find my work interesting");
+        }
+    </script>
+    <h1>Video Projects</h1>
+    <h2 id="Bani">My friend Bani</h2>
+    <div class="column1">
+        <div class="row1">
+            <video id="myVideo">
+         <source src="videos/videopremierpro.mp4" type="video/mp4"></video>
+
+        </div>
+        <div class="row1">
+            <p> A spontaneous project. <br> I was joking around with my friend and decided to film her for fun. Watching the result I ended up editing and creating a simple vinatege type of video, to remember that day. </p>
+        </div>
+    </div>
+    <button id="playBtn">Play</button>
+    <button id="pauseBtn">Pause</button>
+    <script>
+        var myVideo = document.getElementById("myVideo");
+        var playBtn = document.getElementById("playBtn");
+        var pauseBtn = document.getElementById("pauseBtn");
+
+        playBtn.onclick = function() {
+            myVideo.play();
+        }
+
+        pauseBtn.onclick = function() {
+            myVideo.pause();
+        }
+    </script>
+
+
+    <h2 id="narr">Narrative trailer </h2>
+    <div class="column1">
+        <div class="row1">
+            <p> A university project. <br> Two different music videoclips edited and adjusted together to create the idea of a romantic movie. All this story is represtend as a narrative trailer </p>
+        </div>
+
+        <div class="row1">
+            <video id="myVideo1">
+     <source src="videos/PF-CRED-MaldaLika.mp4" type="video/mp4"> </video>
+
+
+        </div>
+
+    </div>
+    <button id="playBtn1">Play</button>
+    <button id="pauseBtn1">Pause</button>
+    <script>
+        var myVideo1 = document.getElementById("myVideo1");
+        var playBtn1 = document.getElementById("playBtn1");
+        var pauseBtn1 = document.getElementById("pauseBtn1");
+
+        playBtn1.onclick = function() {
+            myVideo1.play();
+        }
+
+        pauseBtn1.onclick = function() {
+            myVideo1.pause();
+        }
+    </script>
+
+    <footer>
+
+        <p> &#169; Malda Lika. All rights reserved.</p>
+        <p>Last Modified:</p>
+        <script>
+            document.write(document.lastModified)
+        </script>
+    </footer>
+</body>
