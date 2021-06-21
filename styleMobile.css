@@ -28,7 +28,7 @@ html {
 }
 
 .hero-image button {
-    border: 1px greenyellow solid;
+    border: 1px #BA331C solid;
     border-radius: 2px;
     background-color: transparent;
     color: white;
@@ -78,7 +78,7 @@ html {
 }
 
 .nav-container a:hover {
-    color: yellowgreen;
+    color: #D58668;
 }
 
 #index {
@@ -102,7 +102,7 @@ html {
 }
 
 #indexmenu a:hover {
-    color: yellowgreen;
+    color: #D58668;
 }
 
 .box {
@@ -178,8 +178,8 @@ html {
 
 .row1 p {
     border-radius: 8px;
-    border: solid yellowgreen 5px;
-    background-color: rgb(184, 245, 61);
+    border: solid #BA331C 5px;
+    background-color: rgba(236, 167, 120, 0.979);
     margin: 10px;
     padding: 20px;
     font-size: small;
@@ -206,10 +206,10 @@ html {
 }
 
 button {
-    border: 1px gray solid;
+    border: 2px #BA331C solid;
     border-radius: 2px;
-    background-color: greenyellow;
-    color: white;
+    background-color: rgba(236, 167, 120, 0.979);
+    color: black;
     transition-duration: 0.4s;
     width: 80px;
     margin-left: 30px;
@@ -219,7 +219,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(146, 224, 28);
+    background-color: rgba(236, 198, 173, 0.999);
     cursor: pointer;
 }
 
@@ -233,4 +233,15 @@ button:hover {
 
 ol {
     display: none;
+}
+
+#submit {
+    background-color: #BA331C;
+    color: white;
+    margin: 8px;
+}
+
+#submit:hover {
+    background-color: #D58668;
+    color: black;
 }
